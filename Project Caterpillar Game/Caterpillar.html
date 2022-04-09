@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caterpillar Game</title>
+</head>
+<style>
+     *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        display:flex;
+        min-height:90vh;
+        flex-direction:row;
+        margin:0;
+    }
+    .column1
+    {
+        background-color: chocolate;
+        flex: 1;
+    }
+    .column2
+    {
+        display : flex;
+        flex-direction:column;
+        flex: 2;
+        align-items: center;
+        background-color: green;
+
+    }
+    .column3
+    {
+        background-color: brown;
+        flex:1;
+    }
+    canvas
+    {
+        box-shadow: greenyellow 20px 10px 50px;
+        background-color: black;
+        width:510px;
+        height:460px;
+        justify-content: center;
+
+    }
+    h1
+    {
+        border: 10px ridge rgb(6, 54, 0);
+        background-color: rgb(43, 255, 0);
+        font-size: 40px;
+        padding:5px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="column1">
+        <img src="Caterpillar.gif" width="400px" height="600px"></img>
+    </div>
+    <div class="column2">
+        <h1>Caterpillar</h1>
+        <canvas id="game"></canvas>
+    </div>
+    <div class="column3">
+        <img src="Spider.gif" width="400px" height="600px"></img>
+    </div>
+      
+    
+</body>
+<script src="Caterpillar.js"></script>
+</html>

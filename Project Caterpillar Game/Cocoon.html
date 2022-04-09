@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Cocoon</title>
+</head>
+<style>
+    body
+    {
+        margin:0;
+        padding:0;
+    }
+    #div1
+    {
+        width:1366px;
+        height:50px;
+        background-color:greenyellow;
+        color:green;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    #div2
+    {
+        width:1366px;
+        height:575px;
+        
+        background-image: url("Cocoon.gif");
+        background-repeat: no-repeat;
+        background-size: 1366px 575px;
+        margin-top:0px;
+    }
+p
+{
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size:15px;
+    
+}
+h1
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+
+}
+</style>
+<body>
+    <div id="div1">
+
+    </div>
+    <div id="div2">
+        <h1>Metamorphosis</h1>
+        <p>
+The butterfly and moth develop through a process called metamorphosis. This is a Greek word that means transformation or change in shape.<br>
+
+Insects have two common types of metamorphosis. Grasshoppers, crickets, dragonflies, and cockroaches have incomplete metamorphosis. The young (called a nymph) usually look like small adults but without the wings.<br>
+
+Butterflies, moths, beetles, flies and bees have complete metamorphosis. The young (called a larva instead of a nymph) is very different from the adults. It also usually eats different types of food.<br>
+
+There are four stages in the metamorphosis of butterflies and moths: egg, larva, pupa, and adult.
+        </p>
+
+    </div>
+    
+</body>
+<script>
+    var timeleft=20;
+    var t=setInterval(Timeup, 1000);
+    function Timeup()
+    { 
+        if(timeleft <= 0)
+        {
+            clearInterval(t);
+            document.getElementById("div1").innerHTML = "Metamorphosis";
+            alert("Patience is a virtue");
+            window.location.href = "Butterfly.html";
+        } 
+        else 
+        {
+            document.getElementById("div1").innerHTML = "Please Wait "+timeleft + "seconds";
+        }
+        timeleft -= 1;
+    }
+    
+    
+</script>
+</html>

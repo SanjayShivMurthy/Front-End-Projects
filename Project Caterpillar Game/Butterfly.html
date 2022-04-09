@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Final</title>
+</head>
+<style>
+body
+{
+    
+    background-repeat: no-repeat;
+    background-size: 1366px 625px;
+    text-align: justify;
+}
+p
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size:20px;
+    
+}
+h1
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+
+}
+</style>
+<body>
+    <h1 id="h2"></h1>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    
+</body>
+<script>
+    var r=Math.floor(Math.random()*10);
+    console.log(r);
+    
+    if(r==0)
+    {
+        document.body.style.backgroundImage = "url('Butterfly0.jpg')";
+        
+        document.getElementById("h2").innerHTML ="Sword Butterfly Mutation";
+        
+        document.getElementById("p2").style.fontWeight = "bolder";
+        document.getElementById("p2").innerHTML ="Race:	Giant Insect.<br>Power attacker +3000 (While attacking, this creature gets +3000 power.).<br>Power:	2000+<br>Flavor Texts:	One snoutful of its pollen can knock out a Horned Beast for a week.";
+        document.getElementById("p3").style.fontWeight = "bolder";
+        document.getElementById("p3").style.fontSize = "40px";
+        document.getElementById("p3").style.textAlign="center";
+        document.getElementById("p3").innerHTML ="!!!DANGER!!!";
+        alert("Ill Omen, you mutated into a monstrous Sword Butterfly");
+
+    }
+    else if(r<5 && r>0)
+    {
+        document.body.style.backgroundImage = "url('Butterfly1.gif')";
+        
+        document.getElementById("h2").style.color = "blue";
+        document.getElementById("h2").innerHTML ="Black Swallowtail Butterfly";
+        document.getElementById("p2").style.color = "blue";
+        document.getElementById("p2").innerHTML ="Papilio polyxenes(Black Swallowtail Butterfly) is part of the tribe Papilionini of the swallowtail butterfly family, Papilionidae. The members of this tribe all have tails on the hindwings, and therefore include species named swallowtail.Eggs are pale yellow. Young larvae are mostly black and white with a saddle, and older larvae are green with black transverse bands containing yellow spots.This caterpillar absorbs toxins from the host plants, and therefore tastes poor to bird predators.The black swallowtail caterpillar has an orange forked gland, called the osmeterium. When in danger, the osmeterium, which looks like a snake's tongue, everts and releases a foul smell to repel predators.";
+        alert("Congralutions, you are a Black Swallowtail Butterfly");
+    }
+    
+    else
+    {
+        document.body.style.backgroundImage = "url('Butterfly2.jpg')";
+        document.getElementById("h2").style.color = "purple";
+        document.getElementById("h2").innerHTML ="Colorado Hairstreak Butterfly";
+        document.getElementById("p2").style.color = "purple";
+        document.getElementById("p2").innerHTML ="The Colorado Hairstreak is a montane butterfly, typically found in hills and canyons between 6500 and 9000 feet. They are recognized by their distinctive iridescent purple, blue, and black coloration when their wings are opened and the orange spots on their ventral side when their wings are closed. They have a small tail on their lower wings common to hairstreak, or Theclinae, butterflies and have a wingspan of less than an inch and a half at their largest.";
+        alert("Congralutions, you are a Colorado Hairstreak Butterfly");
+    }
+    
+</script>
+</html>
